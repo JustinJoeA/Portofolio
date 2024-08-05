@@ -29,6 +29,7 @@ html {
     display: flex;
     /* align-items: center; */
     width: 100%;
+    max-width: 1800px;
     z-index: 10000;
     background-color: transparent;
     padding: 30px 50px 30px 50px;
@@ -85,16 +86,15 @@ html {
 
 #landing-page-container{
     display: flex;
-    align-items: center;  
-    justify-content: center;  
-    width: 1600px;
+    width: 100%;
+    max-width: 1800px;
     height: 100vh;
-    /* background-color: #fff; */
+    max-height: 900px;
 }
 
 #leftside{
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,7 @@ html {
 
 #rightside{
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,32 +156,6 @@ html {
     }
 }
 
-/* .minibox{
-    background-color: transparent;
-    border: 3px solid white;
-    position:absolute;
-    z-index: 1;
-    opacity: 0.5;
-    
-}
-
-#box1{
-    width: 100px;
-    height: 100px;
-    bottom: 70px;
-    right: 70px;
-    transform: rotate(-30deg);
-}
-
-#box2{
-    width: 3%;
-    height: 3%;
-    bottom: 50px;
-    right: 50px;
-    transform: rotate(-15deg);
-    
-} */
-
 #hello-world{
     font-size: 20px;
     
@@ -207,7 +181,9 @@ html {
 
 #about-me-container{
     height: 100vh;
-    width: 1600px;
+    max-height: 900px;
+    width: 100%;
+    max-width: 1800px;
     padding: 50px;
     display: flex;
 }
@@ -254,7 +230,6 @@ html {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding: 20px 0 20px 0;
 }
 
 
@@ -280,7 +255,8 @@ html {
 
 #project-container{
     height: auto;
-    width: 1600px;
+    width: 100%;
+    max-width: 1800px;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -333,7 +309,8 @@ html {
 
 #tools-container{
     height: auto;
-    width: 1600px;
+    width: 100%;
+    max-width: 1800px;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -369,7 +346,6 @@ html {
     flex-direction: column;
     /* padding: 10px; */
 }
-
 
 .tools-section-container{
     display: flex;
@@ -413,7 +389,8 @@ html {
 
 #contact-container{
     height: 200px;
-    width: 1600px;
+    width: 100%;
+    max-width: 1800px;
     padding: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -459,8 +436,129 @@ html {
     font-size: 16px;
 }
 
+/* Responsive Code */
+
+@media (max-width:1200px) {
+    #header-container{
+        padding: 25px;
+    }
+
+    #landing-page-container{
+        flex-direction: column;
+    }
+
+    #profile-picture{
+        width: 250px;
+    }
+
+    #box{
+        width: 250px;
+        height: 250px;
+    }
+
+    #invertbox{
+        width: 250px;
+        height: 250px;
+    }
+
+    #rightside{
+        justify-content: normal;
+        align-items: center;
+        height: 40%;
+    }
+
+    .title-username{
+        width: 100%;
+        text-align:center;
+    }
+
+    #place-and-date{
+        width: 100%;
+        text-align: center;
+    }
 
 
+    #about-me-container{
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+    }
+    
+    #about-me-left{
+        display: none;
+    }
+
+    #about-me-right{
+        justify-content: normal;
+        width: 100%;
+    }
+
+    .self-description{
+        font-size: 13px;
+    }
+
+
+    #motto-tag{
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    #project-container{
+        padding: 25px;
+    }
+
+    #project-title{
+        font-size: 24px;
+    }
+
+    #project-card-container{
+        flex-direction: column;
+    }
+
+    .projects-card{
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #tools-section{
+        flex-direction: column;
+    }
+
+    #tools-container{
+        padding: 25px;
+    }
+
+    #tools-title{
+        font-size: 24px;
+    }
+
+    .contact-title{
+        font-size: 18px;
+    }
+    .link-title{
+        visibility: hidden;
+    }
+
+    #link-container{
+        display: flex;
+        justify-content: normal;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .contact-content{
+        display: flex;
+        width: 30px;
+    }
+
+    #contact-container{
+        padding: 25px;
+        align-items: normal;
+        margin-bottom: 0;
+    }
+
+}
 
 
 
